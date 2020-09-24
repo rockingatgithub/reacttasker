@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./components/App";
+import * as firebase from "firebase";
+import "firebase/firestore";
+import "firebase/auth";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const firebaseConfig = {
+  apiKey: "AIzaSyA6JNscZrxUljcJACkCub_JC0LyKFVfois",
+  authDomain: "reacttaskize.firebaseapp.com",
+  databaseURL: "https://reacttaskize.firebaseio.com",
+  projectId: "reacttaskize",
+  storageBucket: "reacttaskize.appspot.com",
+  messagingSenderId: "481880456843",
+  appId: "1:481880456843:web:b241d8bb33cfad85da9e8e",
+  measurementId: "G-NV0ZVPX9HK",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.getElementById("root"));
