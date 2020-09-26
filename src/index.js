@@ -5,6 +5,19 @@ import App from "./components/App";
 import * as firebase from "firebase";
 import "firebase/firestore";
 import "firebase/auth";
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers';
+
+
+const logger = ({ dispatch, getState }) => (next) => (action) => {
+  console.log('ACTION', action);
+  next(action);
+};
+
+const store = createStore(rootReducer, applyMiddleware(logger, thunk));
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyA6JNscZrxUljcJACkCub_JC0LyKFVfois",
@@ -20,4 +33,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+<Provider store = {store}>
+<App /></Provider>, document.getElementById("root"));
