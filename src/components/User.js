@@ -54,6 +54,12 @@ class User extends Component {
 
   saveForm = async () => {
     const { password } = this.state;
+
+    if (password.length < 6) {
+      alert("Password must be 6 characters long");
+      return;
+    }
+
     await firebase
       .auth()
       .signInWithEmailAndPassword(this.props.email, this.props.password)
@@ -63,12 +69,13 @@ class User extends Component {
       .catch(function (error) {
         console.log("error");
       });
+
     let user = await firebase.auth().currentUser;
 
     await user
       .updatePassword(password)
       .then(function () {
-        console.log("password changed");
+        alert("Password changed successfully");
       })
       .catch(function (error) {
         console.log(error);
