@@ -7,7 +7,7 @@ export const SIGN_OUT = "SIGN_OUT";
 export function allTaskList() {
   return async function (dispatch) {
     let temp = [];
-    await fetch("http://jsonplaceholder.typicode.com/todos").then(
+    await fetch("https://jsonplaceholder.typicode.com/todos").then(
       async (res) => {
         temp = await res.json();
         console.log(temp);
