@@ -17,5 +17,7 @@ code {
 }
 
 .uppertabs:hover {
-  box-shadow: 10px 10px 8px 10px #888888;
+  box-shadow: 2px 2px 14px 6px cadetblue;
+  border-radius: 8px;
+  padding: 5px;
 }
