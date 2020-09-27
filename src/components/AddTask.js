@@ -84,7 +84,7 @@ class AddTask extends Component {
             />
           </RadioGroup>
         </FormControl>
-        <Button variant="default" onClick={this.handleAddTask}>
+        <Button variant="contained" onClick={this.handleAddTask}>
           Submit
         </Button>
       </div>

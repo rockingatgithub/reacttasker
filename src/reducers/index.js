@@ -3,8 +3,8 @@ import { ALL_TASK, ADD_TASK, DELETE_TASK, SIGN_IN, SIGN_OUT } from "../actions";
 
 const initialTaskState = {
   list: [],
-  isLoggedIn: false,
-  isLoggedOut: true,
+  isLoggedIn: true,
+  isLoggedOut: false,
 };
 
 export function tasks(state = initialTaskState, action) {

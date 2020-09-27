@@ -101,17 +101,29 @@ class Navbar extends Component {
               <Toolbar>
                 <Grid container spacing={4}>
                   <Grid item>
-                    <Typography onClick={this.homeHandler} variant="h5">
+                    <Typography
+                      onClick={this.homeHandler}
+                      variant="h5"
+                      className="uppertabs"
+                    >
                       Home
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography onClick={this.taskHandler} variant="h5">
+                    <Typography
+                      onClick={this.taskHandler}
+                      variant="h5"
+                      className="uppertabs"
+                    >
                       Tasks
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography onClick={this.userHandler} variant="h5">
+                    <Typography
+                      onClick={this.userHandler}
+                      variant="h5"
+                      className="uppertabs"
+                    >
                       User
                     </Typography>
                   </Grid>
