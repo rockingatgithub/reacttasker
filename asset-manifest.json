@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reacttasker/static/css/main.8efeb909.chunk.css",
-    "main.js": "/reacttasker/static/js/main.8ff438b5.chunk.js",
-    "main.js.map": "/reacttasker/static/js/main.8ff438b5.chunk.js.map",
+    "main.js": "/reacttasker/static/js/main.ecc79766.chunk.js",
+    "main.js.map": "/reacttasker/static/js/main.ecc79766.chunk.js.map",
     "runtime-main.js": "/reacttasker/static/js/runtime-main.8d123c94.js",
     "runtime-main.js.map": "/reacttasker/static/js/runtime-main.8d123c94.js.map",
     "static/js/2.856584ad.chunk.js": "/reacttasker/static/js/2.856584ad.chunk.js",
     "static/js/2.856584ad.chunk.js.map": "/reacttasker/static/js/2.856584ad.chunk.js.map",
     "index.html": "/reacttasker/index.html",
-    "precache-manifest.342719ef266b157b37a737aa2770ef5d.js": "/reacttasker/precache-manifest.342719ef266b157b37a737aa2770ef5d.js",
+    "precache-manifest.00cc4ac17b8d6492c72e9bf53f2c51c2.js": "/reacttasker/precache-manifest.00cc4ac17b8d6492c72e9bf53f2c51c2.js",
     "service-worker.js": "/reacttasker/service-worker.js",
     "static/css/main.8efeb909.chunk.css.map": "/reacttasker/static/css/main.8efeb909.chunk.css.map",
     "static/js/2.856584ad.chunk.js.LICENSE.txt": "/reacttasker/static/js/2.856584ad.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8d123c94.js",
     "static/js/2.856584ad.chunk.js",
     "static/css/main.8efeb909.chunk.css",
-    "static/js/main.8ff438b5.chunk.js"
+    "static/js/main.ecc79766.chunk.js"
   ]
 }
